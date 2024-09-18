@@ -66,11 +66,24 @@
         }
     </style>
 </head>
-<body>
+
+<body onclick="PlayAudio()">
+
     <div>
         <h1>MI PAO BONITA(●'◡'●)💕</h1>
         <h2>Tengo un regalo para ti✍(◔◡◔)</h2>
         <button onclick="window.location.href='rosas.html'">Ver regalo☞💛</button>
     </div>
+
+    <audio id="musica1" controls loop>
+        <source src="audio/Flores amarillas.mp3" type="audio/mpeg">
+        Este navegador no acepta formatos de audio
+    </audio>
+
+    <script>
+        function PlayAudio() {
+            document.getElementById("musica1").play();
+        }
+    </script>
 </body>
 </html>
